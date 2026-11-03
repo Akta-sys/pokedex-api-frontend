@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex 90s &amp; 2000 | Consumo de API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="luz"></div>
+    <div>
+      <h1>Pokédex</h1>
+      <p>Os 151 originais do anime que marcou os anos 90 e 2000</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controles">
+      <input id="busca" type="search" placeholder="Buscar pelo nome..." aria-label="Buscar Pokémon">
+      <button id="btn-favoritos" type="button" aria-pressed="false">♥ Só favoritos</button>
+    </section>
+
+    <p id="status" role="status">Carregando Pokémon...</p>
+
+    <!-- O HTML só tem este container vazio. Os cards são criados pelo JavaScript. -->
+    <section id="cards" class="grade"></section>
+  </main>
+
+  <footer>Dados: <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokéAPI</a></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
